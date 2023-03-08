@@ -6,10 +6,12 @@
 
 body {
     font-family: "Noto Sans", sans-serif;
+    color: rgb(34 40 49);
 }
 
 h1 {
     font-size: 48px;
+    margin-bottom: 32px;
 }
 
 h2 {
@@ -34,13 +36,15 @@ h6 {
 
 p {
     font-size: 16px;
+    color:rgb(238, 238, 238);
+    margin-bottom: 32px;
 }
 
 header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 32px 64px;
+    padding: 32px 128px;
     background-color: rgb(34 40 49);
 }
 
@@ -65,23 +69,51 @@ nav ul li {
     margin-right: 64px;
 }
 
-nav ul li a {
+a {
     transition: all 0.3s ease 0s;
 }
 
-nav ul li a:hover {
+a:hover {
     color: rgba(255, 211, 105, 1);
 }
 
 button {
-    padding: 9px 25px;
+    padding: 8px 24px;
     background-color: rgb(255, 255, 255);
     color: rgb(34 40 49);
     border: none;
-    border-radius: 100px;
+    border-radius: 24px;
     cursor: pointer;
 }
 
 button:hover {
-    color: rgb(255, 211, 105);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dark {
+    background-color: rgb(34 40 49);
+    color:rgb(255, 255, 255);
+}
+
+.container {
+    padding: 128px 128px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 256px;
+}
+
+.large-button {
+    padding: 16px 32px;
+    background-color: rgb(255, 211, 105);
+}
+
+.large-button:hover {
+    background-color: rgba(255, 211, 105, 0.8);
+}
+
+img {
+    max-width: 100%;
 }
