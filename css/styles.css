@@ -2,16 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: "Noto Sans", sans-serif;
-    color: rgb(34 40 49);
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
 }
 
 h1 {
     font-size: 48px;
-    margin-bottom: 32px;
 }
 
 h2 {
@@ -36,15 +34,13 @@ h6 {
 
 p {
     font-size: 16px;
-    color:rgb(238, 238, 238);
-    margin-bottom: 32px;
 }
 
 header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 32px 128px;
+    padding: 32px 15%;
     background-color: rgb(34 40 49);
 }
 
@@ -55,13 +51,7 @@ header {
 li, a, button {
     font-size: 16px;
     font-weight: 700;
-    text-decoration: none;
     color: rgb(255, 255, 255);
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
 }
 
 nav ul li {
@@ -95,14 +85,28 @@ button:hover {
     color:rgb(255, 255, 255);
 }
 
-.container {
-    padding: 128px 128px;
+section {
+    padding: 128px 15%;
 }
 
-.hero {
+.download {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 256px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 128px;
+}
+
+.download-img img {
+    max-width: 100%;
+}
+
+.download-text {
+    margin-right: 64px;
+}
+
+.download-text p {
+    color:rgb(238, 238, 238);
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .large-button {
@@ -112,8 +116,4 @@ button:hover {
 
 .large-button:hover {
     background-color: rgba(255, 211, 105, 0.8);
-}
-
-img {
-    max-width: 100%;
 }
